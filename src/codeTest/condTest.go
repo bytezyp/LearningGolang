@@ -26,7 +26,7 @@ func main()  {
 	time.Sleep(time.Second *3)
 	cond.Broadcast() // 3 秒
 	fmt.Println("Broadcast...")
-	time.Sleep(time.Second * 60)
+	time.Sleep(time.Second * 6)
 }
 
 

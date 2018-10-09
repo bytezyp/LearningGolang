@@ -36,9 +36,9 @@ func setupSigusr1Trap()  {
 	c := make(chan os.Signal, 1)
 	fmt.Println(len(c))
 	go func() {
-		for  range c {
+		//for  range c {
 			DumpStacks()
-		}
+		//}
 	}()
 	signal.Notify(c, syscall.SIGUSR1)
 	fmt.Println(len(c))
